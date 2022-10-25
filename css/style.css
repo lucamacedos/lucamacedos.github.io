@@ -1,0 +1,161 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "PT Sans", sans-serif;
+}
+
+/******************** Utilidades Globais *********************/
+
+a,
+li,
+ul,
+h1,
+p {
+  padding: 0px;
+  margin: 0px;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0px 20px;
+}
+
+/******************** Header *********************/
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 35px 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 21px;
+}
+
+.logo img {
+  max-width: 40px;
+}
+
+.header_nav ul {
+  display: flex;
+  list-style: none;
+}
+
+.header_nav a {
+  color: #888888;
+  text-transform: uppercase;
+  font-size: 14px;
+  padding: 10px 15px;
+  transition: 0.3s;
+}
+
+.header_nav .selected,
+a:hover {
+  background-color: #42b3e5;
+  color: #ffffff;
+}
+
+/******************** Banner *********************/
+
+.banner {
+  background-image: url(../assets/img1.jpg);
+  background-repeat: no-repeat;
+  background-size: 125%;
+  background-position: center;
+  padding-top: 50px;
+}
+
+.banner_title {
+  font-size: 50px;
+  color: #ffffff;
+  font-weight: 400;
+  text-shadow: 0px 1px 1px rgb(77, 77, 77);
+  line-height: 55px;
+  margin-bottom: 20px;
+}
+
+.banner_info {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 400;
+  text-shadow: 0px 1px 1px rgb(77, 77, 77);
+  margin-bottom: 90px;
+}
+
+.banner_box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.content_box {
+  flex: 1;
+  padding: 25px 30px;
+  background-color: #42b3e5;
+}
+
+.cor1 {
+  background-color: #42b3e5;
+}
+
+.cor2 {
+  background-color: #0384ce;
+}
+
+.cor3 {
+  background-color: #3156a3;
+}
+
+.box_title {
+  color: #ffffff;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.box_info {
+  color: #ffffff;
+  font-size: 13px;
+  line-height: 20px;
+  margin-bottom: 30px;
+}
+
+.box_button a {
+  color: #ffffff;
+  font-size: 14px;
+  border: 1px solid #ffffff;
+  padding: 5px 10px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.box_button a:hover {
+  background-color: initial;
+}
+
+.box_button a::after {
+  content: "";
+  background-image: url(../assets/arrow-right.svg);
+  width: 16px;
+  height: 16px;
+  margin-left: 5px;
+  display: inline-block;
+}
+
+.box_date {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  padding: 10px 0px;
+  border-bottom: 1px solid #4468b2;
+  font-size: 14px;
+}
